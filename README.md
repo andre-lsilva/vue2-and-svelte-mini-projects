@@ -15,3 +15,10 @@
   - lib/compiler: `vue2` / bundler: `vite`
 - svelte-routing-store-app
   - lib/compiler: `svelte` / bundler: `rollup`
+
+## Routing and store management with frameworks
+
+- nuxt-app
+  - lib/compiler: `vue2` / bundler: `vite` / framework: `nuxt`
+- svelte-kit-app
+  - lib/compiler: `svelte` / bundler: `vite` / framework: `svelteKit`

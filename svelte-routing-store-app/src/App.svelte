@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { Router, Route, Link } from "svelte-navigator";
   import Home from "./routes/Home.svelte";
   import Blog from "./routes/Blog.svelte";

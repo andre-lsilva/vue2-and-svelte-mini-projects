@@ -1,0 +1,106 @@
+<template>
+  <div id="app">
+    <header>
+      <nav class="main-nav">
+        <router-link to="/">Home</router-link>
+        <router-link to="/blog">Blog</router-link>
+        <router-link to="/about">About</router-link>
+      </nav>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
+  </div>
+</template>
+
+<style>
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+.main-nav {
+  background: #68cb80;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+main {
+  text-align: center;
+  padding: 1em;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: none;
+  }
+}
+</style>

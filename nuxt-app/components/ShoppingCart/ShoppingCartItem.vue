@@ -11,10 +11,22 @@
 import { mapActions } from "vuex";
 export default {
   props: {
-    title: String,
-    price: Number,
-    info: String,
-    id: String,
+    title: {
+      type: String,
+      default: '',
+    },
+    price: {
+      type: Number,
+      default: 0,
+    },
+    info: {
+      type: String,
+      default: '',
+    },
+    id: {
+      type: String,
+      default: '',
+    },
   },
   data() {
     return {

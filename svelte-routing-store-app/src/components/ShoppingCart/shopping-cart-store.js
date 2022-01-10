@@ -19,8 +19,9 @@ function createShoppingCartStore() {
   return {
     subscribe: shoppingCart.subscribe,
     addItemToShoppingCart: (item) => {
-      shoppingCart.update((items) => {
-        return [...items, item];
+      shoppingCart.update((shoppingCartItems) => {
+        const itemAlreadyExists = shoppingCartItems.find((shoppingCartItem) => shoppingCartItem.id === item.id);
+        return itemAlreadyExists ? [...shoppingCartItems] : [...shoppingCartItems, item];
       });
     },
     removeItemFromShoppingCart: (id) => {

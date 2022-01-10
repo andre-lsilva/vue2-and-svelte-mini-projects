@@ -17,6 +17,12 @@ const state = {
 
 const actions = {
   addItemToShoppingCart({ commit }, item) {
+    const itemAlreadyExists = state.shoppingCartItems.find(
+      (shoppingCartItem) => shoppingCartItem.id === item.id
+    );
+    if (itemAlreadyExists) {
+      return;
+    }
     commit('addItemToShoppingCart', item);
   },
   removeItemFromShoppingCart({ commit }, id) {

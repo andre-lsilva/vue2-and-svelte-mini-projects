@@ -1,9 +1,11 @@
 <template>
   <section>
     <h1>Shopping Cart</h1>
-    <ul v-for="item in shoppingCartItems" :key="item.id">
+    <ul>
       <shopping-cart-item
+        v-for="item in shoppingCartItems"
         :id="item.id"
+        :key="item.id"
         :title="item.title"
         :price="item.price"
         :info="item.info"

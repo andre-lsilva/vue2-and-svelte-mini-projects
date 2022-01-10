@@ -22,3 +22,8 @@
   - lib/compiler: `vue2` / bundler: `vite` / framework: `nuxt`
 - svelte-kit-app
   - lib/compiler: `svelte` / bundler: `vite` / framework: `svelteKit`
+
+## Bonus: Svelte app with TypeScript
+
+- svelte-typescript-app
+  - lib/compiler: `svelte` / bundler: `rollup`

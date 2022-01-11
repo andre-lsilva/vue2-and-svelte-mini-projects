@@ -1,4 +1,4 @@
-# Repo with mini projects inside
+# Repo with some mini projects
 
 ## Simple counter Apps
 
